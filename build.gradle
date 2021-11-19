@@ -25,6 +25,14 @@ buildscript{
 plugins{
     id 'org.jetbrains.kotlin.jvm' version '1.6.0-RC'
     id "org.jetbrains.kotlin.kapt" version "1.6.0-RC"
+    id "org.sonarqube" version "3.3"
+}
+sonarqube {
+  properties {
+    property "sonar.projectKey", "kostandina-d_Mindustry"
+    property "sonar.organization", "kostandina-d"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 allprojects{
